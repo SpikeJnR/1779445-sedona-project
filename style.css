@@ -170,12 +170,13 @@ html {
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: flex-start;
   align-items: center;
   max-width: 470px;
 }
 
 .navigation__list_user {
+  justify-content: flex-end;
   margin-left: auto;
   max-width: 450px;
 }
@@ -1136,45 +1137,28 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 40px;
 }
 
-
 .products__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 438px;
+  grid-template-rows: 1fr;
   gap: 20px;
 }
 
-.products__card{
-  display: grid;
-  grid-template-columns: 140px 140px;
-  grid-template-rows: 212px 28px 21px 36px 36px;
-  grid-template-areas:
-    "Header Header"
-    "Title Title"
-    "Hotel Price"
-    "Detailed Favourites"
-    "Stars Ratio";
-  column-gap: 20px;
-  row-gap: 16px;
+.products__card {
+  display: flex;
+  flex-direction: column;
+  min-height: 438px;
+  gap: 16px;
   padding: 20px;
   box-shadow: 0 0 0 1px var(--color-box-border);
   border-radius: var(--border-radius);
 }
 
-
-.card__link_photo {
-  grid-area: "Header";
-  grid-column-start: 1;
-  grid-column-end: -1;
+.card_hotel-wrapper,
+.card_button-wrapper,
+.card__stars-ration {
+  display: flex;
 }
-
-.card__link_title {
-  grid-area: "Title";
-  grid-column-start: 1;
-  grid-column-end: -1;
-  margin-top: 1px;
-}
-
 .card__title{
   font-family: var(--font-family);
   font-style: normal;
@@ -1185,7 +1169,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .card__hotel {
-  grid-area: "Hotel";
   margin-right: auto;
   font-family: var(--font-family);
   font-style: normal;
@@ -1193,8 +1176,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .card__price {
-  grid-area: "Price";
   margin-left: auto;
+  flex-shrink: 0;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
@@ -1202,7 +1185,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Кнопка подробнее*/
 .button_detailed {
-  grid-area: "Detailed";
+  max-width: 140px;
+  padding: 8px 26px;
+  margin-right: auto;
 }
 
 .button_detailed:hover,
@@ -1234,7 +1219,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Кнопка избранное*/
 .button_favourit {
-  grid-area: "Favourites";
+  max-width: 140px;
+  padding: 8px 20px;
   background-color: var(--color-secondary);
 }
 
@@ -1267,6 +1253,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Кнопка избранное - выбранна*/
 .button_favourit_selected {
+  min-width: 140px;
+  padding: 8px 18px;
   background-color: var(--color-selected);
 }
 
