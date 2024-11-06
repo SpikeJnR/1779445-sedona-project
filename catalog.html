@@ -109,7 +109,7 @@
             </li>
           </ol>
         </div>
-        <div class="filters-group__wrapper" data-test="filter">
+        <div class="filters-group__wrapper_main" data-test="filter">
           <h2 class="visually-hidden">Фильтры товаров</h2>
           <form class="filters-group__form filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__group">
@@ -233,77 +233,105 @@
         <section class="catalog__products products">
           <ul class="products__list">
             <li class="products__card card">
-              <a class="card__link card__link_photo" href="#">
+              <a class="card__link_photo" href="#">
                 <img class="products__image" src="images/catalog/amara-resort-spa.jpg" width="300" height="212"
                   alt="гостинница Amara Resort & Spa">
               </a>
-              <a class="card__link card__link_title" href="#" tabindex="-1">
+              <a class="card__link_title" href="#" tabindex="-1">
                 <h3 class="card__title">Amara Resort & Spa</h3>
               </a>
-              <p class="card__hotel">Гостиница</p>
-              <p class="card__price">От 4000 ₽</p>
-              <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
-              <button class="button_favourit button button_color_secondary button_size_small" type="submit">В
-                избранное</button>
-              <div class="card__stars stars stars_four-star">
-                <span class="visually-hidden">Отель 4 звезды</span>
+              <div class="card_hotel-wrapper">
+                <p class="card__hotel">Гостиница</p>
+                <p class="card__price">От 4000 ₽</p>
               </div>
-              <p class="card__ratio">Рейтинг: 8,5</p>
+              <div class="card_button-wrapper">
+                <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
+                <button class="button_favourit button button_color_secondary button_size_small" type="submit">
+                  В избранное
+                </button>
+              </div>
+              <div class="card__stars-ration">
+                <div class="card__stars stars stars_four-star">
+                  <span class="visually-hidden">Отель 4 звезды</span>
+                </div>
+                <p class="card__ratio">Рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="products__card card">
-              <a class="card__link card__link_photo" href="#">
+              <a class="card__link_photo" href="#">
                 <img class="products__image" src="images/catalog/villas-at-poco-diablo.jpg" width="300" height="212"
                   alt="гостинница Villas at Poco Diablo">
               </a>
-              <a class="card__link card__link_title" href="#" tabindex="-1">
+              <a class="card__link_title" href="#" tabindex="-1">
                 <h3 class="card__title">Villas at Poco Diablo</h3>
               </a>
-              <p class="card__hotel">Гостиница</p>
-              <p class="card__price">От 5000 ₽</p>
-              <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
-              <button class="button_favourit button_favourit_selected button button_color_secondary button_size_small"
-                type="submit">В
-                избранном</button>
-              <div class="card__stars stars stars_four-star">
-                <span class="visually-hidden">Отель 4 звезды</span>
+              <div class="card_hotel-wrapper">
+                <p class="card__hotel">Гостиница</p>
+                <p class="card__price">От 5000 ₽</p>
               </div>
-              <p class="card__ratio">Рейтинг: 9,2</p>
+              <div class="card_button-wrapper">
+                <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
+                <button class="button_favourit button_favourit_selected button button_color_secondary button_size_small"
+                  type="submit">
+                  В избранном
+                </button>
+              </div>
+              <div class="card__stars-ration">
+                <div class="card__stars stars stars_four-star">
+                  <span class="visually-hidden">Отель 4 звезды</span>
+                </div>
+                <p class="card__ratio">Рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="products__card card">
-              <a class="card__link card__link_photo" href="#">
+              <a class="card__link_photo" href="#">
                 <img class="products__image" src="images/catalog/desert-quail-inn.jpg" width="300" height="212"
                   alt="гостинница Desert Quail Inn">
               </a>
-              <a class="card__link card__link_title" href="#" tabindex="-1">
+              <a class="card__link_title" href="#" tabindex="-1">
                 <h3 class="card__title">Desert Quail Inn</h3>
               </a>
-              <p class="card__hotel">Гостиница</p>
-              <p class="card__price">От 2500 ₽</p>
-              <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
-              <button class="button_favourit button button_color_secondary button_size_small" type="submit">В
-                избранное</button>
-              <div class="card__stars stars stars_three-star">
-                <span class="visually-hidden">Отель 3 звезды</span>
+              <div class="card_hotel-wrapper">
+                <p class="card__hotel">Гостиница</p>
+                <p class="card__price">От 2500 ₽</p>
               </div>
-              <p class="card__ratio">Рейтинг: 6,9</p>
+              <div class="card_button-wrapper">
+                <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
+                <button class="button_favourit button button_color_secondary button_size_small" type="submit">
+                  В избранное
+                </button>
+              </div>
+              <div class="card__stars-ration">
+                <div class="card__stars stars stars_three-star">
+                  <span class="visually-hidden">Отель 3 звезды</span>
+                </div>
+                <p class="card__ratio">Рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="products__card card">
-              <a class="card__link card__link_photo" href="#">
+              <a class="card__link_photo" href="#">
                 <img class="products__image" src="images/catalog/gree-tree-inn.jpg" width="300" height="212"
                   alt="гостинница GreenTree Inn">
               </a>
-              <a class="card__link card__link_title" href="#" tabindex="-1">
+              <a class="card__link_title" href="#" tabindex="-1">
                 <h3 class="card__title">GreenTree Inn</h3>
               </a>
-              <p class="card__hotel">Гостиница</p>
-              <p class="card__price">От 1500 ₽</p>
-              <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
-              <button class="button_favourit button button_color_secondary button_size_small" type="submit">В
-                избранное</button>
-              <div class="card__stars stars stars_two-star">
-                <span class="visually-hidden">Отель 2 звезды</span>
+              <div class="card_hotel-wrapper">
+                <p class="card__hotel">Гостиница</p>
+                <p class="card__price">От 1500 ₽</p>
               </div>
-              <p class="card__ratio">Рейтинг: 5,0</p>
+              <div class="card_button-wrapper">
+                <a class="button_detailed button button_color_primary button_size_small" href="#">Подробнее</a>
+                <button class="button_favourit button button_color_secondary button_size_small" type="submit">
+                  В избранное
+                </button>
+              </div>
+              <div class="card__stars-ration">
+                <div class="card__stars stars stars_two-star">
+                  <span class="visually-hidden">Отель 2 звезды</span>
+                </div>
+                <p class="card__ratio">Рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
         </section>
